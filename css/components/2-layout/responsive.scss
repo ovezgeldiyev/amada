@@ -1,0 +1,125 @@
+// 1450px
+@include xxxxlg-xxxxxlg {
+    @include services-xxxxlg-xxxxxlg;
+}
+// 1380px
+@include xxxlg-xxxxlg {
+    @include services-xxxlg-xxxxlg;
+}
+// 1180px
+@include xlg-xxlg {
+    .auto__container {
+        padding: 0 30px;
+    }
+    h2 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    @include design-xlg-xxlg;
+    @include services-xlg-xxlg;
+
+}
+// 1024px
+@include lg-xlg {
+    ::-webkit-scrollbar{
+        display: none;
+    }
+    h2 {
+        font-size: 35px;
+        line-height: 45px;
+    }
+    h3 {
+        font-size: 28px;
+        line-height: 32px;
+    }
+    h4 {
+        &.large {
+            font-size: 160px;
+        }
+    }
+    p {
+        &.sm {
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+    body {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    @include hero-lg-xlg;
+    @include project-lg-xlg;
+
+}
+// 930px
+@include md-lg {
+    h2 {
+        font-size: 27px;
+        line-height: 35px;
+    }
+    h3 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    h4 {
+        &.large {
+            font-size: 130px;
+        }
+    }
+    .input {
+        input {
+            font-size: 12px;
+            line-height: 18px;
+            padding: 12px 18px;
+        }
+    }
+    .button {
+        padding: 12px;
+    }
+    @include design-md-lg;
+    @include services-md-lg;
+    @include newsletter-md-lg;
+}
+// 650px
+@include sm-md {
+    .auto__container {
+        padding: 0 20px;
+    }
+    h2 {
+        font-size: 25px;
+        line-height: 32px;
+    }
+    h3 {
+        font-size: 22px;
+        line-height: 26px;
+    }
+    .lang {
+        font-size: 12px;
+    }
+    @include hero-sm-md;
+    @include design-sm-md;
+    @include project-sm-md;
+    @include newsletter-sm-md;
+}
+
+// 540px
+@include xsm-sm  {
+    h4 {
+        &.large {
+            font-size: 110px;
+        }
+    }
+    .input {
+        input {
+            font-size: 12px;
+            line-height: 18px;
+            padding: 14px 18px;
+        }
+    }
+    .button {
+        padding: 14px;
+    }
+    @include services-xsm-sm;
+    @include newsletter-xsm-sm;
+    @include footer-xsm-sm;
+}
